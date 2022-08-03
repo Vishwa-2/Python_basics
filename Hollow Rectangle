@@ -1,7 +1,0 @@
-stars = range(int(input("Enter the no of stars - ")))
-length = len(stars)
-for star in stars:
-    if star == 0 or star == (length-1):
-        print(length * '*')
-    else:
-        print("*"+ (length-2) * " " + "*")

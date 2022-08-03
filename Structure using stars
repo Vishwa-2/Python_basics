@@ -1,0 +1,82 @@
+# Hollow Rectangle
+
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+    if star == 0 or star == (length-1):
+        print(length * '*')
+    else:
+        print("*"+ (length-2) * " " + "*")
+Ans : 
+*****
+*   *
+*   *
+*   *
+*****
+        
+# Solid Rectangle
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+        print(length * '*')
+
+Ans :
+*****
+*****
+*****
+*****
+*****
+
+#Half Pyramid
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+        print(star * '*')
+Ans : 
+*
+**
+***
+****
+
+#Half Inverted Pyramid
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+    print(length * '*')
+    length -= 1
+
+Ans : 
+*****
+****
+***
+**
+*
+
+#Inverted Full Pyramid
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+    print(" " * star + "* " * length)
+    length -= 1
+
+Ans:
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+
+#Full Pyramid
+stars = range(int(input("Enter the no of stars - ")))
+length = len(stars)
+for star in stars:
+    print((" " * length) + ("* " * star))
+    length -= 1
+
+Ans : 
+    * 
+   * * 
+  * * * 
+ * * * *
+
+# Hollow Full Pyramid
