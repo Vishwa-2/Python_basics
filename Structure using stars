@@ -80,3 +80,30 @@ Ans :
  * * * *
 
 # Hollow Full Pyramid
+stars = range(5)
+length = len(stars)
+for star in stars:
+    if star == 0:
+      print(" " * length + "*")
+    elif length == 1:
+      print(" *" * (star + 1))
+    else:
+      print(" " * length + "*"+ " " * (star*2 -1) + "*")
+    length -= 1
+Ans :
+     *
+    * *
+   *   *
+  *     *
+ * * * * *
+ 
+#Diamond
+stars = range(5)
+length = len(stars)
+for star in stars:
+    print(" " * (length-1) + "* " * (star + 1))
+    length -= 1
+length = 5
+for star in stars:
+    print(" " * star + "* " * length)
+    length -= 1 
